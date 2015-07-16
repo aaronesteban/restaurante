@@ -1,0 +1,4 @@
+<?
+class MesasController extends AppController
+{
+}
