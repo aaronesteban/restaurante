@@ -1,6 +1,9 @@
 <?
 class Mesero extends AppModel
 {
+
+	public $virtualFields = array('nombre_completo' => 'CONCAT(Mesero.nombre, " ", Mesero.apellido)');
+
 	public $validate = array(
 		'dni' => array(
 			'rule' => 'notEmpty'
